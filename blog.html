@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog Profesional</title>
+    <script>
+        // Animación de entrada al aparecer
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".blog-card");
+            cards.forEach((c, i) => {
+                setTimeout(() => c.classList.add("visible"), i * 300);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LEWIS HAMILTON</div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="galeria.html">Galería</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+</header>
+
+<h1 style="text-align:center; color:#1e4cff;">Blog Profesional</h1>
+
+<div class="blog-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYnjrWEgP7c1xljzHUBufK93bNCAXd7obEiS6_XXeMPyhlWBTmVXfyXu3YrSXu_dvZ7P3DOJ2Arhq14SvmVne6tIxf56_gdDdPzKS1A&s=10">
+    <h2>Inicio de carrera</h2>
+    <p>Lewis comenzó en categorías junior demostrando un talento excepcional.</p>
+    <a class="btn-leer" href="https://www.formula1.com" target="_blank">Leer más</a>
+</div>
+
+<div class="blog-card">
+    <img src="https://cdn-2.motorsport.com/images/mgl/2y3j5bg6/s800/lewis-hamilton-ferrari.jpg">
+    <h2>Etapa Mercedes</h2>
+    <p>Una era de dominio absoluto con 6 campeonatos mundiales adicionales.</p>
+    <a class="btn-leer" href="https://www.mercedesamgf1.com" target="_blank">Leer más</a>
+</div>
+
+<div class="blog-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/2025_Japan_GP_-_Ferrari_-_Lewis_Hamilton_-_Fanzone_Stage_%28cropped%29.jpg">
+    <h2>Ferrari 2025</h2>
+    <p>Su nueva etapa marca un momento histórico para la Fórmula 1.</p>
+    <a class="btn-leer" href="https://www.ferrari.com" target="_blank">Leer más</a>
+</div>
+
+<footer>
+    © 2025 — Daysi Britos
+</footer>
+
+</body>
+</html>
